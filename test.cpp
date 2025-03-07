@@ -39,7 +39,6 @@ int main()
 
 
 
-
 //print factorial using loop
 //for loop
 
@@ -78,6 +77,8 @@ int main()
 //     cout<<endl;
 // }
 // }
+
+
 
 
 
@@ -140,6 +141,36 @@ int main()
 // }
 
 
+
+
+
+
+
+
+
+{
+    int num;
+    cout<<"enter";
+    cin>>num;
+    
+    int fir=0;
+    int sec=1;
+    int nxt;
+
+    cout<<fir<<" "<<sec<<" ";
+
+    for(int i=3;i<=num;i++){
+        nxt=fir+sec;
+        fir=sec;
+        sec=nxt;
+    }
+    cout<<nxt<<" ";
+}
+
+
+
+
+
 //fabonnaci series 
 
 // {
@@ -193,29 +224,30 @@ int main()
 
 //     }
 // }
-{
-    int num;
-    cout<<"enter: ";
-    cin>>num;
-int fir=0;
-int sec=1;
-int nxt;
 
-for(int i=0;i<num;i++){
-    if(i==0){
-        cout<<fir<<" ";
-        continue;
-    }
-    if(i==1){
-        cout<<sec<<" ";
-        continue;
-    }
-nxt=fir+sec;
-fir=sec;
-sec=nxt;
-cout<<nxt<<" ";
-}
-}
+// {
+//     int num;
+//     cout<<"enter: ";
+//     cin>>num;
+// int fir=0;
+// int sec=1;
+// int nxt;
+
+// for(int i=0;i<num;i++){
+//     if(i==0){
+//         cout<<fir<<" ";
+//         continue;
+//     }
+//     if(i==1){
+//         cout<<sec<<" ";
+//         continue;
+//     }
+// nxt=fir+sec;
+// fir=sec;
+// sec=nxt;
+// cout<<nxt<<" ";
+// }
+// }
 
 
 // digit count and sum
