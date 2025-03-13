@@ -102,18 +102,40 @@ int main()
 
 
 
+// {
+//     int arr[]={4,7,2,9,7,5,6,4};
+
+//     int s=sizeof(arr)/sizeof(arr[5]);
+
+//     for(int i=0;i<s;i++){
+//         arr[i]=arr[i]-5;
+//     }
+
+//     for(int i=0;i<s;i++){
+//         cout<<arr[i]<<"\t";
+//     }
+// }
+
+
+
+
+
 {
-    int arr[]={4,7,2,9,7,5,6,4};
-
-    int s=sizeof(arr)/sizeof(arr[5]);
-
-    for(int i=0;i<s;i++){
-        arr[i]=arr[i]-5;
-    }
-
-    for(int i=0;i<s;i++){
-        cout<<arr[i]<<"\t";
-    }
+    int arr[]={4,5,2,9,9,7,2,1};
+    for(int i=0;i<8;i++){
+        if(arr[i]!=-1){
+            int count =1;
+            for(int j=i+1;j<8;j++){
+                if(arr[i]==arr[j]){
+                    count++;
+                    arr[j]=-1;
+                }
+            }
+            // cout<<arr[i]<<"is"<<count<<endl;
+            if(count == 1){
+                cout<<"unique number is " <<arr[i]<<endl;
+            }
+        }
+        }
 }
-
 

@@ -1,12 +1,13 @@
 #include <iostream>
 using namespace std;
 int main()
+
 //right (c<=r)
 // {
 // for(int r=1;r<=5;r++){
 //     for(int c=1;c<=5;c++){
 //         if(c<=r){
-//             cout<<" * ";
+//             cout<<"*";
 //         }
 //         else{
 //             cout<<" ";
@@ -52,7 +53,7 @@ int main()
 
 
 
-//enverted right
+// //enverted right
 // {
 // for(int r=1;r<=5;r++){
 //     for(int c=1;c<=5;c++){
