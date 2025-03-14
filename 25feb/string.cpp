@@ -10,10 +10,18 @@ int main()
 // cout<<a[3];
 // cout<<a[4];
 // cout<<a[5]<<endl;
+
+
 // cout<<a<<endl;
+
 // cout<<a.length()<<endl;
+
 // cout<<a.at(0);
 // }
+
+
+
+
 
 //predefine function of string
 
@@ -27,41 +35,22 @@ int main()
 // 5:- find => a.find(a)  b="new";
 //             a.find(b)
 
+
+
+
 // {
 //     string a="ritika";
 //     string b="saloni";
 
 //     b.append(a);
 //     cout<<b<<endl;
-//     cout<<a.find('a')<<endl;
-//     cout<<b<<endl;
-
-// }
-
-
-
-// {
-//     string name;
-//     cout<<"enter your name";
-//     cin>>name;
-
-//     int i=0;
-//     int j=name.length()-1;
-
-//     while(i<j){
-//         if(name[i] != name[j]){
-//             cout<<"not a pallindrom";
-//             return 0;
-//         }
-//         i++;
-//         j--;
-//     }
-//     cout<<"pallindrom";
-// }
+//     cout<<a.find('t')<<endl;
+//         cout<<a.length()<<endl;
+//         cout<<a.at(0);
+//  }
 
 
 
-//reverse
 {
     string name;
     cout<<"enter your name";
@@ -71,15 +60,37 @@ int main()
     int j=name.length()-1;
 
     while(i<j){
-        char temp=name[i];
-        name[i]=name[j];
-        name[j]=temp;
-        
+        if(name[i] != name[j]){
+            cout<<"not a pallindrom";
+            return 0;
+        }
         i++;
         j--;
-        }
-        cout<<name;
     }
+    cout<<"pallindrom";
+}
+
+
+
+//reverse
+// {
+//     string name;
+//     cout<<"enter your name";
+//     cin>>name;
+
+//     int i=0;
+//     int j=name.length()-1;
+
+//     while(i<j){
+//         char temp=name[i];
+//         name[i]=name[j];
+//         name[j]=temp;
+        
+//         i++;
+//         j--;
+//         }
+//         cout<<name;
+//     }
    
 
 

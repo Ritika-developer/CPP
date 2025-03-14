@@ -62,12 +62,25 @@ using namespace std;
 
 //function :- default argument 
 
-int sum (int a=0,int b=0){
-    return a+b;
+// int sum (int a=0,int b=0){
+//     return a+b;
 
-}
-int main (){
-    int num1=7;
-    int num2=10;
-    cout<<sum(num1,num2);
+// }
+// int main (){
+//     int num1=7;
+//     int num2=10;
+//     cout<<sum(num1,num2);
+// }
+
+
+
+
+int main(){
+    int c=30;
+    cout<<&c<<endl;
+    int *p = NULL;
+    cout<<p<<endl;
+    int b =10;
+    int &a=b;
+    cout<<a;
 }
